@@ -1,0 +1,6 @@
+git stash --- saves uncommitted changes locally, allowing you to make changes, saving branches and performing other git operations
+
+git restore --- used to undo the effects of git add
+
+
+		 
