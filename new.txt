@@ -16,7 +16,14 @@ docker-compose down === stop containers and remove containers
 Git:
  
 git stash === saves uncommitted changes locally, allowing you to make changes, saving branches and performing other git operations
-git restore === used to undo the effects of git add
-git rebase === 
+git restore === used to undo the effects of unstaged files, 
+git restore --staged === unstage staged files 
+git rebase === if regular rebase : updating feature branch with the default branch or any other branch. Example:
+        git fetch origin main
+        git checkout my-feature-branch
+        git rebase origin/main
+git rebase === if interactive rebase : modify commits(amend a commit message, squash, edit or delete commits). Example:if you want to edit last three commits in you branch
+                 git rebase -i HEAD~3        
+               
 git reflog === 
 git reset === 
